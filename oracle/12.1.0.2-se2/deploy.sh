@@ -24,11 +24,11 @@ buildDockerImage()
 
 	cd work 
 
-	#wget --load-cookies=../cookies.txt --no-check-certificate  https://download.oracle.com/otn/linux/oracle12c/121020/linuxamd64_12102_database_se2_1of2.zip 
-	#wget --load-cookies=../cookies.txt --no-check-certificate  https://download.oracle.com/otn/linux/oracle12c/121020/linuxamd64_12102_database_se2_2of2.zip
+	wget --load-cookies=../cookies.txt --no-check-certificate  https://download.oracle.com/otn/linux/oracle12c/121020/linuxamd64_12102_database_se2_1of2.zip 
+	wget --load-cookies=../cookies.txt --no-check-certificate  https://download.oracle.com/otn/linux/oracle12c/121020/linuxamd64_12102_database_se2_2of2.zip
 
-	cp C:/Users/cmihalac/Downloads/linuxamd64_12102_database_se2_1of2.zip ./linuxamd64_12102_database_se2_1of2.zip
-	cp C:/Users/cmihalac/Downloads/linuxamd64_12102_database_se2_2of2.zip ./linuxamd64_12102_database_se2_2of2.zip
+	#cp C:/Users/cmihalac/Downloads/linuxamd64_12102_database_se2_1of2.zip ./linuxamd64_12102_database_se2_1of2.zip
+	#cp C:/Users/cmihalac/Downloads/linuxamd64_12102_database_se2_2of2.zip ./linuxamd64_12102_database_se2_2of2.zip
 
 	git clone https://github.com/oracle/docker-images.git
 
