@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ORACLE_DATA_PATH=C:/Data/Oracle/12.1.0.2.0-se2/data
+ORACLE_DATA_PATH=$HOME/Data/Oracle/12.1.0.2-se2/data
 export ORACLE_DATA_PATH
 
 ORACLE_PWD=12345678

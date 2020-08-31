@@ -12,6 +12,10 @@
 6. Update 'env.sh' accordingly:
 	* ORACLE_DATA_PATH - env var specifying the host's path where the Oracle data will be stored
   	* ORACLE_PWD -  - env var specifying the password for user SYSTEM
+8. Just for Linux: after defining the value for ORACLE_DATA_PATH, run the following commands (54321:54322 are the Oracle Linux user:group ids)
+	* mkdir -p $ORACLE_DATA_PATH || true
+	* chmod 755 $ORACLE_DATA_PATH
+	* sudo chown 54321:54322 $ORACLE_DATA_PATH
 8. Run 'deploy.sh' and wait until the Oracle docker image is built. This script creates a Docker container as well. 
 9. Optionally, fill 'init.sql' with any initialisation scripts and run 'initdb.sh'
 

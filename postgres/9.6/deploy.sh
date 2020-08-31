@@ -2,7 +2,7 @@
 
 set -e
 
-POSTGRES_DATA_PATH=C:/Data/Postgres/9.6/data:/var/lib/postgresql/data
+POSTGRES_DATA_PATH=$HOME/Data/Postgres/9.6/data:/var/lib/postgresql/data
 export POSTGRES_DATA_PATH
 
 POSTGRES_USER=postgres
